@@ -1,5 +1,4 @@
-export * from './Contact';
-export * from './About';
-export * from './Home';
-export * from './Navigation';
-export * from './Main';
+export { default as Layout } from "./layout";
+export { default as Button } from "./button";
+export { default as Header } from "./header";
+export { default as Title } from "./title";

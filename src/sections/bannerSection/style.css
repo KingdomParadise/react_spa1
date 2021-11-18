@@ -1,0 +1,57 @@
+/* Banner Section */
+
+.banner {
+  background-image: url(../../assets/images/banner-bg.png);
+  min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  overflow-y: hidden;
+}
+
+.hero-globe {
+  position: absolute;
+  z-index: -1;
+}
+.globe1 {
+  top: 100%;
+  left: 10%;
+  transform: translate(0, -50%);
+}
+.globe2 {
+  top: 85%;
+  right: 15%;
+  /* transform: translatex(-50%); */
+}
+.globe3 {
+  top: 15%;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.banner h2 {
+  font-size: 168px;
+}
+.banner h3 {
+  font-size: 70px;
+}
+.banner .custom-text {
+  margin: 20px 0;
+}
+.custom-text {
+  font-size: 20px;
+  word-spacing: 4px;
+}
+.banner-btn-group button {
+  margin-right: 20px;
+}
+
+.banner-image {
+  max-height: 120vh;
+  margin: auto;
+}
+.banner-image img {
+  z-index: 1;
+}

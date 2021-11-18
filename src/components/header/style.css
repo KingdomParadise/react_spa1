@@ -1,0 +1,7 @@
+.header {
+  z-index: 999;
+}
+.navbar li a {
+  padding: 15px;
+  display: inline-block;
+}

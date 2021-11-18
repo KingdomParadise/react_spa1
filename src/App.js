@@ -1,20 +1,12 @@
-import React, { Component } from 'react';
-import './App.css';
-
-import { Navigation, Main } from './components';
-
-class App extends Component {
-
-
-  render() {
-    return (
-      <div >
-        <h1>React SPA Demo</h1>
-        <Navigation />
-        <Main />
-      </div>
-    );
-  }
+import "./App.css";
+import "./media.css";
+import Home from "./pages/Home";
+function App() {
+  return (
+    <div className="App">
+      <Home />
+    </div>
+  );
 }
 
 export default App;
