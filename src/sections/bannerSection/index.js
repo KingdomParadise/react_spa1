@@ -10,7 +10,7 @@ import "./style.css";
 const BannerSection = () => {
   return (
     <section className="banner pt-60 pb-0 lg:py-0 lg:pt-0 text-center lg:text-left overflow-hidden">
-      {/* <Header /> */}
+      <Header />
       <div className="container">
         <div className="grid grid-cols-1 gap-4 lg:pb-16 lg:gap-0  lg:grid-cols-12 items-center">
           <div className="lg:col-span-7 xl:col-span-6">

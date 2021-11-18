@@ -12,6 +12,7 @@ import {
 import "./style.css";
 import { Button } from "../../components";
 import Image from "../../assets/images/contact-us-image.png";
+import Image2 from "../../assets/images/contact-us-image-mobile.png";
 const data = [
   {
     image: Uniswap,
@@ -66,16 +67,16 @@ const PartnerSection = () => {
           ))}
         </div>
         <div className="partners-contact  grid grid-cols-1 md:grid-cols-2 items-center">
-          <div className="pt-10 pl-8 xl:pl-20 text-center md:text-left">
+          <div className="pt-10 md:pl-8 xl:pl-20 text-center md:text-left">
             <h3 className="title-text font-cursive">Interested in</h3>
             <h3 className="title-text font-cursive">super fast data?</h3>
             <Button>Contact us</Button>
           </div>
           <div className="self-end">
             <picture>
-              <source media="(min-width:1024px)" srcSet={Image} />
+              <source media="(min-width:768px)" srcSet={Image} />
+              <img src={Image2} alt="" className="w-full" />
             </picture>
-            <img src={Image} alt="" />
           </div>
         </div>
       </div>
