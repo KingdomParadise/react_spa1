@@ -5,7 +5,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.partners .title {
+  text-align: center;
+}
 .partner-logo-wrapper {
   width: 100%;
   display: flex;
@@ -67,7 +69,8 @@
 }
 @media (max-width: 560px) {
   .partners-contact .title-text {
-    font-size: 60px;
+    font-size: 45px;
+    margin: auto 10px;
   }
   .partners-contact .main-button {
     width: 90%;

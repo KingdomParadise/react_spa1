@@ -1,6 +1,12 @@
 import React from "react";
 import { Layout } from "../components";
-import { BannerSection, PartnerSection, NetworkSection } from "../sections";
+import {
+  BannerSection,
+  PartnerSection,
+  NetworkSection,
+  AboutSection,
+  ProductSection,
+} from "../sections";
 const Home = () => {
   return (
     <div>
@@ -8,6 +14,8 @@ const Home = () => {
         <BannerSection />
         <PartnerSection />
         <NetworkSection />
+        <AboutSection />
+        <ProductSection />
       </Layout>
     </div>
   );
