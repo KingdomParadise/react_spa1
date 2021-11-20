@@ -6,3 +6,4 @@ export { default as ProductSection } from "./productSection";
 export { default as NewsSection } from "./newsSection";
 export { default as CommunitySection } from "./communitySection";
 export { default as TeamSection } from "./teamSection";
+export { default as JoinSection } from "./joinSection";

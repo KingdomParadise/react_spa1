@@ -54,9 +54,9 @@ const CommunitySection = () => {
                     className="flex items-center linkitem"
                     style={{ color: item.color }}
                   >
-                    <i class={`${item.icon} text-2xl`}></i>
+                    <i className={`${item.icon} text-2xl`}></i>
                     <p className="mx-3 text-2xl font-bold">{item.title}</p>
-                    <i class="fas fa-arrow-right text-2xl"></i>
+                    <i className="fas fa-arrow-right text-2xl"></i>
                   </div>
                   <p className="text-base my-4 mb-8">{item.desc}</p>
                 </div>

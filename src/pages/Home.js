@@ -9,6 +9,7 @@ import {
   NewsSection,
   CommunitySection,
   TeamSection,
+  JoinSection,
 } from "../sections";
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         <NewsSection />
         <CommunitySection />
         <TeamSection />
+        <JoinSection />
       </Layout>
     </div>
   );

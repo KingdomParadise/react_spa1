@@ -53,7 +53,7 @@ const TeamSection = () => {
                 </div>
                 <div className=" flex  items-center mt-2 sm:mt-0">
                   {item.social.map((v, i) => (
-                    <a href="#">
+                    <a href="#" key={i}>
                       <i
                         className={`${v} inline-block ml-2 text-lg`}
                         key={i}

@@ -87,7 +87,10 @@ const ProductSection = () => {
             </div>
             <div className="md:col-span-7">
               {data.map((item, i) => (
-                <div className={`${currentActive === i ? "block" : "hidden"}`}>
+                <div
+                  className={`${currentActive === i ? "block" : "hidden"}`}
+                  key={i}
+                >
                   <div>
                     <img src={item.content.image} alt="" className="" />
                   </div>
