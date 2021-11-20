@@ -6,6 +6,7 @@ import {
   NetworkSection,
   AboutSection,
   ProductSection,
+  NewsSection,
 } from "../sections";
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <NetworkSection />
         <AboutSection />
         <ProductSection />
+        <NewsSection />
       </Layout>
     </div>
   );

@@ -3,3 +3,4 @@ export { default as PartnerSection } from "./partnerSection";
 export { default as NetworkSection } from "./networkSection";
 export { default as AboutSection } from "./aboutSection";
 export { default as ProductSection } from "./productSection";
+export { default as NewsSection } from "./newsSection";

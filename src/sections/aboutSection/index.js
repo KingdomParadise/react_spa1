@@ -20,7 +20,7 @@ const AboutSection = () => {
         </p>
         <picture>
           <source media="(min-width:768px)" srcSet={Image} />
-          <img src={ImageMobile} alt="" />
+          <img src={ImageMobile} alt="" className="w-full" />
         </picture>
         <div className="about-btm grid grid-cols-1 md:grid-cols-2 ">
           <div className="p-10 text-center md:text-left md:p-20 ">
