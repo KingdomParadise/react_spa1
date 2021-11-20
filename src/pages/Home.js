@@ -7,6 +7,8 @@ import {
   AboutSection,
   ProductSection,
   NewsSection,
+  CommunitySection,
+  TeamSection,
 } from "../sections";
 const Home = () => {
   return (
@@ -18,6 +20,8 @@ const Home = () => {
         <AboutSection />
         <ProductSection />
         <NewsSection />
+        <CommunitySection />
+        <TeamSection />
       </Layout>
     </div>
   );
