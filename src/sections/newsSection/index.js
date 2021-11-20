@@ -6,7 +6,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 import youtubeImage from "../../assets/images/youtubeposter.png";
-import Twitter1 from "../../assets/images/twitter1.png";
+
 import { sliderData, twitterData } from "./data";
 
 const NewsSection = () => {

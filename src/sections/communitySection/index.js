@@ -1,5 +1,5 @@
 import "./style.css";
-import { Title } from "../../components";
+
 import Globe from "../../assets/images/hero-globe1.png";
 import Globe2 from "../../assets/images/hero-globe2.png";
 const linkData = [
