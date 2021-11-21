@@ -1,5 +1,8 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useState } from "react";
 import "./style.css";
+
 import { Title } from "../../components";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -10,6 +13,7 @@ import youtubeImage from "../../assets/images/youtubeposter.png";
 import { sliderData, twitterData } from "./data";
 
 const NewsSection = () => {
+  const [showItems, setShowItems] = useState(6);
   const options = {
     margin: 30,
     nav: true,
@@ -28,7 +32,7 @@ const NewsSection = () => {
           desc="Discover featured news and what other are saying"
         />
 
-        <OwlCarousel className="owl-theme my-20" {...options}>
+        <OwlCarousel className="owl-theme my-40" {...options}>
           {sliderData.map((item, i) => (
             <div className="flex flex-col md:flex-row" key={i}>
               <div className="w-56 md:w-48 lg:w-60">
@@ -49,24 +53,30 @@ const NewsSection = () => {
             </div>
           ))}
         </OwlCarousel>
-        <div>
+        <div className="mt-20">
           <img src={youtubeImage} alt="" />
         </div>
-        <div className="mt-20 twitter-container">
-          {twitterData.map((item, i) => (
-            <div className="w-full sm:w-1/2 md:w-1/3 col" key={i}>
-              <div className="twitter-card p-4 rounded-lg">
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4 twitter-container">
+          <div className="read-more">
+            <div className="read-more-content">
+              <i className="fab fa-twitter"></i>
+              <p>Read More Tweets</p>
+            </div>
+          </div>
+          {twitterData.slice(0, showItems).map((item, i) => (
+            <div className="w-full h-full" key={i}>
+              <div className="twitter-card p-4 rounded-3xl h-full">
                 <div className="flex">
                   <img src={item.image} alt="" />
                   <div className="ml-4">
-                    <p className="text-lg">{item.name}</p>
-                    <span className="text-base" style={{ color: "#819EBC" }}>
+                    <p className="text-base">{item.name}</p>
+                    <span className="text-sm" style={{ color: "#819EBC" }}>
                       {item.id}
                     </span>
                   </div>
                 </div>
                 <p
-                  className="mt-4 text-lg"
+                  className="mt-4 text-base"
                   dangerouslySetInnerHTML={{ __html: item.desc }}
                 ></p>
               </div>
