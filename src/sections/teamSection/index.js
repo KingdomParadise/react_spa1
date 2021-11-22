@@ -40,7 +40,7 @@ const TeamSection = () => {
   const [currentItem, setCurrentItem] = useState({});
   const clickHandler = (item) => {
     setCurrentItem(item);
-    console.log(currentItem ? true : false);
+
     if (currentItem) {
       setShowModal((prev) => !prev);
     }
