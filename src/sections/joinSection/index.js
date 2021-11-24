@@ -24,16 +24,20 @@ const JoinSection = () => {
   return (
     <section className="join">
       <div className="container ">
-        <h4 className="title-text font-cursive text-center">JOIN OUR TEAM</h4>
+        <h4 className="title-text font-cursive text-center" data-aos="fade-up">
+          JOIN OUR TEAM
+        </h4>
         <div className="join-content">
-          <div>
+          <div data-aos="fade-right">
             <p className="text-xl leading-8 ">
               You are the only one missing here.
             </p>
             <img src={Arrow} alt="" className="arrow" />
             <img src={Group} alt="" />
           </div>
-          <Button>See Open Jobs</Button>
+          <div className="community-btn" data-aos="fade-left">
+            <Button>See Open Jobs</Button>
+          </div>
         </div>
         <footer className="text-center">
           <img src={Logo} alt="" className="mx-auto" />

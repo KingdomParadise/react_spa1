@@ -21,7 +21,9 @@
   margin: 10px 0 10px 10px;
   width: 100px;
 }
-
+community-btn {
+  position: relative;
+}
 footer {
   padding: 200px 0 50px;
 }

@@ -50,10 +50,13 @@ const NetworkSection = () => {
   return (
     <section className="our-networks">
       <div className="container ">
-        <h4 className="title-text font-cursive text-center">
+        <h4 className="title-text font-cursive text-center" data-aos="fade-up">
           Supported networks
         </h4>
-        <div className="networks mt-20 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8">
+        <div
+          className="networks mt-20 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8"
+          data-aos="fade-up"
+        >
           {data.map((v, i) => (
             <div className="text-center my-4" key={i}>
               <div className="networks-imagewrapper mx-auto">
@@ -63,7 +66,7 @@ const NetworkSection = () => {
             </div>
           ))}
         </div>
-        <div>
+        <div data-aos="fade-up">
           <div className="network-btm  grid grid-cols-1 md:grid-cols-2 mt-52 items-center">
             <div className="mb-20 md:mb-0">
               <Title

@@ -14,24 +14,28 @@ const data = [
     name: "Reborn",
     pos: "CEO & Founder",
     social: ["fab fa-github", "fab fa-twitter"],
+    duration: "500",
   },
   {
     img: Team2,
     name: "Jaydon Dias",
     pos: "Senior Java Engineer",
     social: ["fab fa-github", "fab fa-twitter", "fab fa-codepen"],
+    duration: "1000",
   },
   {
     img: Team3,
     name: "Marilyn Westervelt",
     pos: "Marketing Specialist",
     social: ["fab fa-github", "fab fa-twitter", "fab fa-codepen"],
+    duration: "1500",
   },
   {
     img: Team4,
     name: "Tatiana Bergson",
     pos: "Key Account Manager",
     social: ["fab fa-github", "fab fa-twitter", "fab fa-codepen"],
+    duration: "2000",
   },
 ];
 
@@ -57,12 +61,12 @@ const TeamSection = () => {
         setShowModal={setShowModal}
       />
       <div className="container">
-        <div className=" text-center">
+        <div className=" text-center" data-aos="fade-up">
           <Title title="Our Team" desc="" />
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-8 md:gap-y-4 gap-4 mt-20">
           {data.map((item, i) => (
-            <div key={i}>
+            <div key={i} data-aos="fade-up" data-aos-duration={item.duration}>
               <div
                 className="cursor-pointer"
                 onClick={() => clickHandler(item)}
@@ -89,6 +93,7 @@ const TeamSection = () => {
           ))}
         </div>
       </div>
+      <div className="clear"></div>
     </section>
   );
 };

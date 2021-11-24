@@ -16,7 +16,59 @@
     rgba(108, 93, 211, 1) 100%
   );
 }
-
+.tab {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+.block.tab-active .product-tab-image,
+.hidden.tab-inactive .product-tab-image {
+  animation: fadeInUp 1s;
+  -webkit-animation: fadeInUp 1s;
+}
+.block.tab-active .product-tab-content,
+.hidden.tab-inactive .product-tab-content {
+  animation: fadeInDown 1s;
+  -webkit-animation: fadeInDown 1s;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
 @media (max-width: 768px) {
   .product {
     background-image: url(../../assets/images/products-bg-mobile.png);

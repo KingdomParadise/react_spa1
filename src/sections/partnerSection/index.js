@@ -56,7 +56,10 @@ const PartnerSection = () => {
           title="Our partners"
           desc="We are proud to be working with leading institutions"
         />
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 my-20">
+        <div
+          className="grid grid-cols-2 md:grid-cols-4 gap-8 my-20"
+          data-aos="fade-up"
+        >
           {data.map((v, i) => (
             <div className="text-center partner-card" key={i}>
               <div className="partner-logo-wrapper">
@@ -67,12 +70,15 @@ const PartnerSection = () => {
           ))}
         </div>
         <div className="partners-contact  grid grid-cols-1 md:grid-cols-2 items-center">
-          <div className="pt-10 md:pl-8 xl:pl-20 text-center md:text-left">
+          <div
+            className="pt-10 md:pl-8 xl:pl-20 text-center md:text-left"
+            data-aos="fade-up"
+          >
             <h3 className="title-text font-cursive">Interested in</h3>
             <h3 className="title-text font-cursive">super fast data?</h3>
             <Button>Contact us</Button>
           </div>
-          <div className="self-end">
+          <div className="self-end" data-aos="fade-up">
             <picture>
               <source media="(min-width:768px)" srcSet={Image} />
               <img src={Image2} alt="" className="w-full" />

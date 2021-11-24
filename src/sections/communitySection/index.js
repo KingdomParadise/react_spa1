@@ -35,9 +35,9 @@ const CommunitySection = () => {
       <div className="community-bg">
         <img src={Globe} alt="" className="globe globe1" />
         <img src={Globe2} alt="" className="globe globe2" />
-        <div className="container ">
+        <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="text-center md:text-left">
+            <div className="text-center md:text-left" data-aos="fade-up">
               <h2 className="about-title font-cursive font-black">
                 meet the worldwide
                 <span className="block title-text">Community</span>
@@ -49,7 +49,7 @@ const CommunitySection = () => {
             </div>
             <div className="mt-8 md:mt-0">
               {linkData.map((item, i) => (
-                <div className="link-item-wrapper" key={i}>
+                <div className="link-item-wrapper" data-aos="fade-up" key={i}>
                   <div
                     className="flex items-center linkitem"
                     style={{ color: item.color }}

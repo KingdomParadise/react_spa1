@@ -20,12 +20,74 @@
   background-size: cover;
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
+  float: left;
+  width: 100%;
 }
 .about-btm .title-text {
   font-size: 70px;
 }
+.about picture {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 150px;
+}
+.about picture.about-imagemiddle {
+  position: relative;
+  float: left;
+  width: 100%;
+  max-width: 560px;
+  left: calc(100% - 75%);
+  padding: 50px;
+  transform: scale(1.5);
+  animation: imagemiddle 8s linear infinite;
+  -webkit-animation: imagemiddle 8s linear infinite;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.about .about-imagemiddle-marT {
+  margin-top: 110px;
+}
+@keyframes imagemiddle {
+  0% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+  50% {
+    transform: scale(1.7);
+    -webkit-transform: scale(1.7);
+    -moz-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    -o-transform: scale(1.7);
+}
+  100% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+}
 
 @media (max-width: 768px) {
+  .about picture {
+    position: relative;
+    width: 100%;
+    float: left;
+    top: auto;
+    left: auto;
+    padding: 0;
+  }
+  .about picture.about-imagemiddle {
+    display: none;
+  }
   .about-title,
   .about-btm .title-text {
     font-size: 45px;

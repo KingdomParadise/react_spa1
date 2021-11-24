@@ -12,3 +12,27 @@
   font-weight: 900;
   line-height: 104%;
 }
+section {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  [data-aos="rotate-content"] {
+    transform: rotate(-90deg);
+    opacity: 0;
+    transition-property: transform, opacity;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+  }
+  [data-aos="rotate-content"].aos-animate {
+    transform: rotate(0);
+    opacity: 1;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+}
